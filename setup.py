@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='nvgpu',
     version='0.9.0',
     description='NVIDIA GPU tools',
-    url='https://github.com/rossumai/nvgpu',
+    url='https://github.com/Rahul-Scalers/nvgpu',
     author='Bohumir Zamecnik, Rossum',
     author_email='bohumir.zamecnik@rossum.ai',
     license='MIT',
