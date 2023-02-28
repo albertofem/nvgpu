@@ -32,6 +32,9 @@ def gpu_info():
             device_name = nv.nvmlDeviceGetName(handle)
             temperature = nv.nvmlDeviceGetTemperature(handle, nv.NVML_TEMPERATURE_GPU)
             gpu_infos[i]['temp'] = temperature
+            utilization = nv.nvmlDeviceGetUtilizationRates(handle).gpu
+            gpu_infos[i]['utilization'] = utilization
+
 
 
     return gpu_infos
